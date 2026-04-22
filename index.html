@@ -389,10 +389,23 @@ const notesEl = document.getElementById('notes');
 const trackerEl = document.getElementById('tracker');
 const mixEl = document.getElementById('mixinfo');
 
+// Natural version number extraction for sorting (v0, v2, v10 → 0, 2, 10)
+function versionNum(id) {
+  const m = id.match(/^v(\d+)/);
+  return m ? parseInt(m[1]) : 9999;
+}
+
+let sortedSongs = [];  // rebuilt on rating change; rating DESC, then version num ASC
 function rebuildDropdown() {
+  sortedSongs = [...window.SONGS].sort((a, b) => {
+    const ra = ratings[a.id] || 0;
+    const rb = ratings[b.id] || 0;
+    if (rb !== ra) return rb - ra;
+    return versionNum(a.id) - versionNum(b.id);
+  });
   const currentVal = versionSel.value;
   versionSel.innerHTML = '';
-  for (const song of window.SONGS) {
+  for (const song of sortedSongs) {
     const opt = document.createElement('option');
     opt.value = song.id;
     const r = ratings[song.id] || 0;
@@ -464,7 +477,7 @@ function loadSong(id) {
 }
 
 versionSel.onchange = () => loadSong(versionSel.value);
-loadSong(window.SONGS[0].id);
+loadSong(sortedSongs[0].id);
 
 // ============================================================
 // Transport
@@ -509,9 +522,9 @@ document.addEventListener('keydown', (e) => {
     (playing ? document.getElementById('stop') : document.getElementById('play')).click();
   } else if (e.key >= '1' && e.key <= '9') {
     const idx = parseInt(e.key) - 1;
-    if (idx < window.SONGS.length) {
-      versionSel.value = window.SONGS[idx].id;
-      loadSong(window.SONGS[idx].id);
+    if (idx < sortedSongs.length) {
+      versionSel.value = sortedSongs[idx].id;
+      loadSong(sortedSongs[idx].id);
     }
   }
 });
