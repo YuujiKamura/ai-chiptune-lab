@@ -42,6 +42,7 @@
   <h3>VERSION</h3>
   <select id="version"></select>
   <span id="authorBadge" style="display:inline-block;padding:0.2em 0.6em;margin-left:1em;background:#222;border:1px solid var(--accent);color:var(--accent);font-size:0.85em;font-weight:bold;letter-spacing:1px;"></span>
+  <span id="stars" style="margin-left:1em;font-size:1.2em;letter-spacing:2px;cursor:pointer;user-select:none;"></span>
   <span id="versionLabel" style="color:#6ac;font-size:0.85em;margin-left:1em;"></span>
 </div>
 
@@ -344,16 +345,64 @@ function pumpScheduler() {
 // ============================================================
 const versionSel = document.getElementById('version');
 const versionLabel = document.getElementById('versionLabel');
+const starsEl = document.getElementById('stars');
+
+// Rating persistence (localStorage)
+const RATINGS_KEY = 'ai-chiptune-ratings';
+function loadRatings() {
+  try { return JSON.parse(localStorage.getItem(RATINGS_KEY) || '{}'); }
+  catch { return {}; }
+}
+function saveRatings(r) { localStorage.setItem(RATINGS_KEY, JSON.stringify(r)); }
+let ratings = loadRatings();
+// Seed v13_zenith = 3 stars if no rating yet
+if (ratings['v13_zenith'] === undefined) {
+  ratings['v13_zenith'] = 3;
+  saveRatings(ratings);
+}
+
+function renderStars(songId) {
+  const r = ratings[songId] || 0;
+  let html = '';
+  for (let i = 1; i <= 5; i++) {
+    const filled = i <= r;
+    html += `<span data-star="${i}" style="color:${filled ? '#ffcc44' : '#444'};transition:color 0.1s;">${filled ? '★' : '☆'}</span>`;
+  }
+  // clear button (hidden when rating is 0)
+  if (r > 0) html += `<span data-star="0" style="color:#666;font-size:0.7em;margin-left:0.4em;cursor:pointer;" title="Clear">✕</span>`;
+  starsEl.innerHTML = html;
+}
+
+starsEl.addEventListener('click', (e) => {
+  if (!currentSong) return;
+  const star = e.target.getAttribute?.('data-star');
+  if (star === null || star === undefined) return;
+  const n = parseInt(star);
+  if (isNaN(n)) return;
+  if (n === 0) delete ratings[currentSong.id];
+  else ratings[currentSong.id] = n;
+  saveRatings(ratings);
+  renderStars(currentSong.id);
+  rebuildDropdown();
+});
 const notesEl = document.getElementById('notes');
 const trackerEl = document.getElementById('tracker');
 const mixEl = document.getElementById('mixinfo');
 
-for (const song of window.SONGS) {
-  const opt = document.createElement('option');
-  opt.value = song.id;
-  opt.textContent = song.name;
-  versionSel.appendChild(opt);
+function rebuildDropdown() {
+  const currentVal = versionSel.value;
+  versionSel.innerHTML = '';
+  for (const song of window.SONGS) {
+    const opt = document.createElement('option');
+    opt.value = song.id;
+    const r = ratings[song.id] || 0;
+    const stars = r > 0 ? ' ' + '★'.repeat(r) : '';
+    opt.textContent = `${song.name}${stars} [${song.author || '?'}]`;
+    versionSel.appendChild(opt);
+  }
+  if (currentVal) versionSel.value = currentVal;
 }
+rebuildDropdown();
 
 function expandTrack(arr) {
   const out = [];
@@ -373,6 +422,7 @@ function loadSong(id) {
   authorBadge.style.color = authorColors[author] || '#ccc';
   authorBadge.style.borderColor = authorColors[author] || '#666';
   versionLabel.textContent = `${currentSong.bpm} BPM · ${currentSong.key} · ${currentSong.progression}`;
+  renderStars(currentSong.id);
   notesEl.textContent = currentSong.notes || '(no notes)';
 
   // mix info
