@@ -1,12 +1,14 @@
 # AI Chiptune Lab
 
+### 🎵 [▶ Live Demo — https://yuujikamura.github.io/ai-chiptune-lab/](https://yuujikamura.github.io/ai-chiptune-lab/)
+
 複数 AI (Claude / Gemini / Codex) に 8-bit NES 風チップチューンを競作させる実験プロジェクト.
 
 同じ制約 (A minor, 150 BPM, 4/4, pulse + triangle + noise の 4ch) のもとで各 AI が JSON で譜面を書く. Python が WAV にレンダし, ブラウザの Web Audio API が同じ JSON からリアルタイム合成する.
 
-## Live Demo
+## 使い方 (プレイヤー)
 
-GitHub Pages で公開中 → **Settings > Pages** が有効化された後, `index.html` をブラウザで開くと即プレイ可能.
+上記 Live Demo を開いて **PLAY** ボタンクリック.
 
 - 数字キー `1`〜`9` でバージョン切替
 - `Space` で Play/Stop
