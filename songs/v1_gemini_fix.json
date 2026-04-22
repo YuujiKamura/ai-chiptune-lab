@@ -1,0 +1,33 @@
+{
+  "id": "v1",
+  "name": "v1 · Gemini Fix",
+  "author": "Claude",
+  "notes": "Gemini 指摘3点を適用: (1) Bar3 Lead末尾 F4→B4 (2) Bar4 Bass をルート固定 (3) Triangle +2dB / Pulse1 -1dB",
+  "bpm": 150,
+  "bars": 4,
+  "key": "A minor",
+  "progression": "Am - F - G - Am",
+  "tracks": {
+    "lead": ["A4",2, "E4",1, "A4",1, "C5",2, "E5",2, "C5",2, "A4",2, "E4",2, "A4",2,
+             "F4",2, "C4",1, "F4",1, "A4",2, "C5",2, "A4",2, "F4",2, "C4",2, "F4",2,
+             "G4",2, "D4",1, "G4",1, "B4",2, "D5",2, "B4",2, "G4",2, "D4",2, "B4",2,
+             "A4",2, "E4",1, "A4",1, "C5",2, "E5",4, "A4",2, "rest",2, "A4",2],
+    "harm": ["E4",4, "A4",4, "C5",4, "E4",4,
+             "A4",4, "C5",4, "A4",4, "F4",4,
+             "D4",4, "G4",4, "B4",4, "D4",4,
+             "E4",4, "A4",4, "C5",8],
+    "bass": ["A2",4, "E2",4, "A2",4, "E2",4,
+             "F2",4, "C2",4, "F2",4, "C2",4,
+             "G2",4, "D2",4, "G2",4, "D2",4,
+             "A2",4, "A2",4, "E2",4, "A2",4],
+    "drums": "K.H.S.H.K..KS.HHK.H.S.H.K..KS.HHK.H.S.H.K..KS.HHK.H.S.H.KHSHKHSH"
+  },
+  "mix": {
+    "master": 0.55,
+    "lead_vol": 0.34,
+    "lead_duty": 0.25,
+    "harm_vol": 0.28,
+    "harm_duty": 0.5,
+    "bass_vol": 0.69
+  }
+}

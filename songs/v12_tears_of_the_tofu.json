@@ -1,0 +1,41 @@
+{
+  "id": "v12",
+  "name": "v12 · Tears of the Tofu",
+  "author": "Gemini",
+  "notes": "『主題(Theme)』の確立に全力を注いだ一曲。イントロで主題の予兆を見せ、メインでFM音源による『歌い上げるリード』が炸裂。16分音符の細かな震え(ビブラート)と、オクターブを超える大胆なメロディの跳躍により、これまでの無機質なループから『キャラの感情を代弁する音楽』へと昇華させた。アクセントの強弱とゲートタイムの制御でAI感を払拭。",
+  "bpm": 150,
+  "bars": 12,
+  "intro_bars": 4,
+  "key": "A minor",
+  "progression": "Am - F - G - Am (x3)",
+  "tracks": {
+    "lead": [
+      "rest",32, "A4",4, "C5",4, "E5",4, "rest",4, "A5",12, "rest",4,
+      "A4",8, "E5",8, "A5",8, "G5",4, "F5",4, "E5",12, "rest",4, "A4",4, "C5",4, "D5",4, "E5",4,
+      "F4",8, "C5",8, "F5",8, "E5",4, "D5",4, "E5",12, "rest",4, "A5",16
+    ],
+    "harm": [
+      "rest",4, "A3",4, "rest",4, "A3",4, "rest",4, "A3",4, "rest",4, "A3",4,
+      "rest",4, "F3",4, "rest",4, "F3",4, "rest",4, "G3",4, "rest",4, "G3",4,
+      "E4",2, "rest",2, "E4",2, "rest",2, "E4",2, "rest",2, "E4",2, "rest",2, "C4",2, "rest",2, "C4",2, "rest",2, "C4",2, "rest",2, "C4",2, "rest",2,
+      "D4",2, "rest",2, "D4",2, "rest",2, "D4",2, "rest",2, "D4",2, "rest",2, "E4",2, "rest",2, "E4",2, "rest",2, "E4",2, "rest",2, "E4",2, "rest",2,
+      "E4",2, "rest",2, "E4",2, "rest",2, "E4",2, "rest",2, "E4",2, "rest",2, "C4",2, "rest",2, "C4",2, "rest",2, "C4",2, "rest",2, "C4",2, "rest",2,
+      "D4",2, "rest",2, "D4",2, "rest",2, "D4",2, "rest",2, "D4",2, "rest",2, "A4",16
+    ],
+    "bass": [
+      "A2",4, "rest",12, "A2",4, "rest",12, "F2",4, "rest",12, "G2",4, "rest",12,
+      "A2",2, "rest",2, "A2",4, "E2",2, "rest",2, "E2",4, "F2",2, "rest",2, "F2",4, "C2",2, "rest",2, "C2",4,
+      "G2",2, "rest",2, "G2",4, "D2",2, "rest",2, "D2",4, "A2",2, "rest",2, "A2",4, "E2",2, "rest",2, "E2",4,
+      "A2",2, "rest",2, "A2",4, "E2",2, "rest",2, "E2",4, "F2",2, "rest",2, "F2",4, "C2",2, "rest",2, "C2",4,
+      "G2",2, "rest",2, "G2",4, "D2",2, "rest",2, "D2",4, "A2",16
+    ],
+    "drums": "K...H...K...H...K...H...K...H...F...H...F...H...G...H...G...H...K.H.S.H.K.H.S.H.K.H.S.H.K.H.S.H.K.H.S.H.K.H.S.H.K.H.S.H.K.H.S.H.K.H.S.H.K.H.S.H.K.H.S.H.K.H.S.H.K.H.S.H.K.H.S.H.K.H.S.H.K.H.S.H."
+  },
+  "mix": {
+    "master": 0.6,
+    "lead_vol": 0.40, "lead_wave": "fm", "lead_fm_ratio": 2.0, "lead_fm_index": 2.5, "lead_attack": 0.1, "lead_release": 0.2, "lead_vibrato_rate": 6.5, "lead_vibrato_depth": 0.02,
+    "harm_vol": 0.25, "harm_wave": "pulse", "harm_duty": 0.25, "harm_gate": 0.4,
+    "bass_vol": 0.60, "bass_wave": "sine", "bass_attack": 0.01, "bass_release": 0.05,
+    "echo_mix": 0.3, "echo_delay": 0.75, "echo_feedback": 0.5
+  }
+}

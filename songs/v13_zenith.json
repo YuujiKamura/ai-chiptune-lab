@@ -1,0 +1,54 @@
+{
+  "id": "v13",
+  "name": "v13 · Tofu Zenith",
+  "author": "Gemini",
+  "notes": "v10(構成)×v11(キレ)×v4(旋律)の集大成。物理モデリングによる極短Gateのスラップベースが地を這い、FM音源の高速アルペジオ主題が空を駆ける。イントロ4小節でリズムの緊張感を極限まで高め、5小節目から一桁台の王道メロディを現代的音色で爆発させる構成。エコーとスタッカートの共存により、リッチさとスピード感を両立させた。",
+  "bpm": 150,
+  "bars": 12,
+  "intro_bars": 4,
+  "key": "A minor",
+  "progression": "Am - F - G - Am (x3)",
+  "tracks": {
+    "lead": [
+      "rest",64,
+      "A4",1, "rest",1, "C5",1, "E5",1, "A4",1, "C5",1, "E5",1, "A5",1, "E5",1, "C5",1, "A4",1, "E4",1, "rest",2, "A4",2,
+      "F4",1, "rest",1, "A4",1, "C5",1, "F4",1, "A4",1, "C5",1, "F5",1, "C5",1, "A4",1, "F4",1, "C4",1, "rest",2, "F4",2,
+      "G4",1, "rest",1, "B4",1, "D5",1, "G4",1, "B4",1, "D5",1, "G5",1, "D5",1, "B4",1, "G4",1, "D4",1, "rest",2, "G4",2,
+      "A4",1, "rest",1, "C5",1, "E5",1, "A4",1, "C5",1, "E5",1, "A5",1, "E5",2, "C5",2, "A4",2, "A5",2,
+      "A4",1, "rest",1, "C5",1, "E5",1, "A4",1, "C5",1, "E5",1, "A5",1, "E5",1, "C5",1, "A4",1, "E4",1, "rest",2, "A4",2,
+      "F4",1, "rest",1, "A4",1, "C5",1, "F4",1, "A4",1, "C5",1, "F5",1, "C5",1, "A4",1, "F4",1, "C4",1, "rest",2, "F4",2,
+      "G4",1, "rest",1, "B4",1, "D5",1, "G4",1, "B4",1, "D5",1, "G5",1, "D5",1, "B4",1, "G4",1, "D4",1, "rest",2, "G4",2,
+      "A4",1, "rest",1, "C5",1, "E5",1, "A4",1, "C5",1, "E5",1, "A5",1, "E5",2, "C5",2, "A4",4
+    ],
+    "harm": [
+      "rest",4, "E4",2, "rest",2, "rest",4, "E4",2, "rest",2, "rest",4, "C4",2, "rest",2, "rest",4, "C4",2, "rest",2,
+      "rest",4, "D4",2, "rest",2, "rest",4, "D4",2, "rest",2, "rest",4, "E4",2, "rest",2, "rest",4, "E4",2, "rest",2,
+      "rest",2, "E4",2, "rest",2, "E4",2, "rest",2, "E4",2, "rest",2, "E4",2, "rest",2, "C4",2, "rest",2, "C4",2, "rest",2, "C4",2, "rest",2, "C4",2,
+      "rest",2, "D4",2, "rest",2, "D4",2, "rest",2, "D4",2, "rest",2, "D4",2, "rest",2, "E4",2, "rest",2, "E4",2, "rest",2, "E4",2, "rest",2, "E4",2,
+      "rest",2, "E4",2, "rest",2, "E4",2, "rest",2, "E4",2, "rest",2, "E4",2, "rest",2, "C4",2, "rest",2, "C4",2, "rest",2, "C4",2, "rest",2, "C4",2,
+      "rest",2, "D4",2, "rest",2, "D4",2, "rest",2, "D4",2, "rest",2, "D4",2, "rest",2, "E4",2, "rest",2, "E4",2, "rest",2, "E4",2, "rest",2, "E4",2
+    ],
+    "bass": [
+      "A2",2, "rest",1, "A3",1, "A2",2, "E2",2, "A2",2, "rest",1, "A3",1, "E2",2, "A2",2,
+      "F2",2, "rest",1, "F3",1, "F2",2, "C3",2, "F2",2, "rest",1, "F3",1, "C3",2, "F2",2,
+      "G2",2, "rest",1, "G3",1, "G2",2, "D3",2, "G2",2, "rest",1, "G3",1, "D3",2, "G2",2,
+      "A2",2, "rest",1, "A3",1, "A2",2, "E2",2, "A2",4, "rest",2, "A2",2,
+      "A2",2, "rest",1, "A3",1, "A2",2, "E2",2, "A2",2, "rest",1, "A3",1, "E2",2, "A2",2,
+      "F2",2, "rest",1, "F3",1, "F2",2, "C3",2, "F2",2, "rest",1, "F3",1, "C3",2, "F2",2,
+      "G2",2, "rest",1, "G3",1, "G2",2, "D3",2, "G2",2, "rest",1, "G3",1, "D3",2, "G2",2,
+      "A2",2, "rest",1, "A3",1, "A2",2, "E2",2, "A2",4, "rest",2, "A2",2,
+      "A2",2, "rest",1, "A3",1, "A2",2, "E2",2, "A2",2, "rest",1, "A3",1, "E2",2, "A2",2,
+      "F2",2, "rest",1, "F3",1, "F2",2, "C3",2, "F2",2, "rest",1, "F3",1, "C3",2, "F2",2,
+      "G2",2, "rest",1, "G3",1, "G2",2, "D3",2, "G2",2, "rest",1, "G3",1, "D3",2, "G2",2,
+      "A2",2, "rest",1, "A3",1, "A2",2, "E2",2, "A2",4, "rest",2, "A2",2
+    ],
+    "drums": "K.H.S.K.K.H.S.H.K.H.S.K.K.H.S.H.K.H.S.K.K.H.S.H.K.H.S.K.K.H.S.H.K.H.S.KH.KH.SHKHKH.KS.HHK.SH.KSHKKKHS.HK.SHHKSHKK.S..K.SKHHHKSKSK.H.S.KH.KH.SHKHKH.KS.HHK.SH.KSHKKKHS.HK.SHHKSHKK.S..K.SKHHHKSKS"
+  },
+  "mix": {
+    "master": 0.6,
+    "lead_vol": 0.35, "lead_wave": "fm", "lead_fm_ratio": 2.0, "lead_fm_index": 2.0, "lead_gate": 0.8, "lead_vibrato_rate": 6.0, "lead_vibrato_depth": 0.015,
+    "harm_vol": 0.22, "harm_wave": "pulse", "harm_duty": 0.125, "harm_gate": 0.2,
+    "bass_vol": 0.65, "bass_wave": "string", "bass_gate": 0.1, "bass_attack": 0.001, "bass_release": 0.05,
+    "echo_mix": 0.35, "echo_delay": 0.75, "echo_feedback": 0.45
+  }
+}

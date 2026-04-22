@@ -1,0 +1,33 @@
+{
+  "id": "v3",
+  "name": "v3 · Bass Locked",
+  "author": "Claude",
+  "notes": "v2 から Bass のみ修正. Bar1/Bar3 で step 8 (beat 3) に必ずルートを置いて重心を固定. 他のトラック (Lead/Harm/Drum) と mix は v2 完全同一.",
+  "bpm": 150,
+  "bars": 4,
+  "key": "A minor",
+  "progression": "Am - F - G - Am",
+  "tracks": {
+    "lead": ["A4",2, "rest",1, "E5",1, "A4",2, "C5",3, "rest",1, "E5",1, "rest",1, "A4",2, "rest",1, "C5",1,
+             "F4",2, "rest",1, "C5",1, "F4",2, "A4",3, "rest",1, "C5",1, "rest",1, "F4",2, "rest",1, "A4",1,
+             "G4",2, "rest",1, "D5",1, "G4",2, "B4",3, "rest",1, "D5",1, "rest",1, "G4",2, "rest",1, "B4",1,
+             "A4",2, "rest",1, "E5",1, "A4",2, "C5",3, "rest",1, "A4",1, "rest",1, "E5",2, "A4",2],
+    "harm": ["rest",2, "E4",2, "rest",2, "A4",2, "rest",2, "C5",2, "rest",2, "E4",2,
+             "rest",2, "A4",2, "rest",2, "C5",2, "rest",2, "A4",2, "rest",2, "F4",2,
+             "rest",2, "D4",2, "rest",2, "G4",2, "rest",2, "B4",2, "rest",2, "D4",2,
+             "rest",2, "E4",2, "rest",2, "A4",2, "rest",2, "C5",2, "rest",2, "A4",2],
+    "bass": ["A2",6, "E2",2, "A2",4, "E2",2, "A2",2,
+             "F2",3, "C3",5, "F2",5, "C3",3,
+             "G2",8, "D3",4, "G2",4,
+             "A2",5, "E2",3, "A2",4, "A2",4],
+    "drums": "K.H.S.KH.KH.SHKHKH.KS.HHK.SH.KSHKKKHS.HK.SHHKSHKK.S..K.SKHHHKSKS"
+  },
+  "mix": {
+    "master": 0.58,
+    "lead_vol": 0.34,
+    "lead_duty": 0.125,
+    "harm_vol": 0.22,
+    "harm_duty": 0.5,
+    "bass_vol": 0.6
+  }
+}

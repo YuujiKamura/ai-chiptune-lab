@@ -1,0 +1,47 @@
+{
+  "id": "v14",
+  "name": "v14 · Overdrive Tofu",
+  "author": "Gemini",
+  "notes": "音源エンジンの限界に挑んだハードロック・チューン。物理モデリングの弦に激しいオーバードライブを掛け、唸るエレキギターの質感を再現。ドラムセットも一新し、ピッチスライドを伴う重厚なキックと芯のあるスネアを導入。チップチューンの枠を超え、生楽器のエネルギーとデジタル歪みが融合した、格闘ゲームのボルテージを最高潮に引き上げる一曲。",
+  "bpm": 150,
+  "bars": 12,
+  "intro_bars": 4,
+  "key": "A minor",
+  "progression": "Am - F - G - Am (Heavy Riff)",
+  "tracks": {
+    "lead": [
+      "rest",32, "A4",4, "rest",4, "C5",4, "rest",4, "E5",4, "rest",4, "A5",8,
+      "A4",4, "A4",4, "rest",2, "C5",2, "A4",4, "E5",4, "rest",4, "A5",8,
+      "F4",4, "F4",4, "rest",2, "A4",2, "F4",4, "C5",4, "rest",4, "F5",8,
+      "G4",4, "G4",4, "rest",2, "B4",2, "G4",4, "D5",4, "rest",4, "G5",8,
+      "A4",4, "A4",4, "rest",2, "C5",2, "A4",4, "E5",4, "E5",4, "A5",8
+    ],
+    "harm": [
+      "rest",64,
+      "A3",2, "rest",2, "A3",2, "rest",2, "A3",2, "rest",2, "A3",2, "rest",2, "F3",2, "rest",2, "F3",2, "rest",2, "F3",2, "rest",2, "F3",2, "rest",2,
+      "G3",2, "rest",2, "G3",2, "rest",2, "G3",2, "rest",2, "G3",2, "rest",2, "A3",2, "rest",2, "A3",2, "rest",2, "A3",2, "rest",2, "A3",2, "rest",2,
+      "A3",2, "rest",2, "A3",2, "rest",2, "A3",2, "rest",2, "A3",2, "rest",2, "F3",2, "rest",2, "F3",2, "rest",2, "F3",2, "rest",2, "F3",2, "rest",2,
+      "G3",2, "rest",2, "G3",2, "rest",2, "G3",2, "rest",2, "G3",2, "rest",2, "A3",16
+    ],
+    "bass": [
+      "A2",4, "A2",4, "E2",4, "E2",4, "F2",4, "F2",4, "C2",4, "C2",4,
+      "G2",4, "G2",4, "D2",4, "D2",4, "A2",4, "A2",4, "E2",4, "E2",4,
+      "A2",2, "rest",1, "A3",1, "A2",2, "E2",2, "A2",2, "rest",1, "A3",1, "E2",2, "A2",2,
+      "F2",2, "rest",1, "F3",1, "F2",2, "C3",2, "F2",2, "rest",1, "F3",1, "C3",2, "F2",2,
+      "G2",2, "rest",1, "G3",1, "G2",2, "D3",2, "G2",2, "rest",1, "G3",1, "D3",2, "G2",2,
+      "A2",2, "rest",1, "A3",1, "A2",2, "E2",2, "A2",4, "rest",2, "A2",2,
+      "A2",2, "rest",1, "A3",1, "A2",2, "E2",2, "A2",2, "rest",1, "A3",1, "E2",2, "A2",2,
+      "F2",2, "rest",1, "F3",1, "F2",2, "C3",2, "F2",2, "rest",1, "F3",1, "C3",2, "F2",2,
+      "G2",2, "rest",1, "G3",1, "G2",2, "D3",2, "G2",2, "rest",1, "G3",1, "D3",2, "G2",2,
+      "A2",16
+    ],
+    "drums": "K...K...S...K...K...K...S...K...F...F...S...F...F...F...S...F...K.K.S.K.K.K.S.K.K.K.S.K.K.K.S.K.K.K.S.K.K.K.S.K.K.K.S.K.K.K.S.K.K.K.S.K.K.K.S.K.K.K.S.K.K.K.S.K.K.K.S.K.K.K.S.K.K.K.S.K.K.K.S.K."
+  },
+  "mix": {
+    "master": 0.6,
+    "lead_vol": 0.35, "lead_wave": "string", "lead_overdrive": 4.5, "lead_attack": 0.005, "lead_release": 0.2, "lead_vibrato_rate": 7.0, "lead_vibrato_depth": 0.02,
+    "harm_vol": 0.40, "harm_wave": "sawtooth", "harm_overdrive": 2.0, "harm_gate": 0.3,
+    "bass_vol": 0.60, "bass_wave": "sine", "bass_attack": 0.01, "bass_release": 0.1,
+    "echo_mix": 0.2, "echo_delay": 0.375, "echo_feedback": 0.3
+  }
+}

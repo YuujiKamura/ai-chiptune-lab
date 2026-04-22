@@ -1,0 +1,33 @@
+{
+  "id": "v5",
+  "name": "v5 · Tofu Slipstream",
+  "author": "Codex",
+  "notes": "Codex composition for the multi-AI contest. Instead of straight rock or dense arpeggio spam, this version uses a diagonal lead line that keeps slipping across the barline feel, with small gaps in harmony and bass to suggest unstable acceleration. The target image is a title screen where tofu is somehow aerodynamic: tense, fast, slightly absurd, but still playable as a fighting-game intro.",
+  "bpm": 150,
+  "bars": 4,
+  "key": "A minor",
+  "progression": "Am - F - G - Am",
+  "tracks": {
+    "lead": ["rest",2, "E5",1, "D5",1, "C5",2, "A4",2, "C5",2, "E5",2, "G5",2, "E5",2,
+             "F5",2, "E5",1, "C5",1, "A4",2, "C5",2, "F5",2, "E5",2, "C5",2, "D5",2,
+             "D5",2, "B4",2, "G4",2, "B4",2, "D5",2, "F5",2, "D5",2, "C5",2,
+             "A4",2, "C5",1, "E5",1, "G5",2, "E5",2, "D5",2, "C5",2, "A4",2, "rest",2],
+    "harm": ["rest",2, "C4",2, "E4",2, "A4",2, "G4",2, "E4",2, "C4",2, "E4",2,
+             "rest",2, "C4",2, "F4",2, "A4",2, "G4",2, "F4",2, "C4",2, "A3",2,
+             "rest",2, "D4",2, "G4",2, "B4",2, "A4",2, "G4",2, "D4",2, "F4",2,
+             "rest",2, "C4",2, "E4",2, "A4",2, "G4",2, "E4",2, "D4",2, "C4",2],
+    "bass": ["A2",3, "rest",1, "E3",2, "A2",2, "C3",2, "E3",2, "G2",2, "E3",2,
+             "F2",3, "rest",1, "C3",2, "F2",2, "A2",2, "C3",2, "G2",2, "C3",2,
+             "G2",3, "rest",1, "D3",2, "G2",2, "B2",2, "D3",2, "F2",2, "D3",2,
+             "A2",3, "rest",1, "E3",2, "A2",2, "C3",2, "E3",2, "A2",2, "rest",2],
+    "drums": "K.HH..SHK.H..SH.K.H.H.SHK..H.S.HK..HH.S.K.HH.S..K.HH..SHKSH.H..H"
+  },
+  "mix": {
+    "master": 0.57,
+    "lead_vol": 0.35,
+    "lead_duty": 0.25,
+    "harm_vol": 0.23,
+    "harm_duty": 0.5,
+    "bass_vol": 0.62
+  }
+}

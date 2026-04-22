@@ -1,0 +1,33 @@
+{
+  "id": "v2",
+  "name": "v2 · Broken Beat",
+  "author": "Claude",
+  "notes": "同じ進行(Am-F-G-Am)でリズムだけ全面改訂. ドラム: 変拍子風シンコペーション(kick clusters + 裏スネア). Lead: 長短混在のスタッカート. Harm: 裏拍ステイブ. Bass: 奇数ステップのルート. 正調ロックからブレイクビート感へ.",
+  "bpm": 150,
+  "bars": 4,
+  "key": "A minor",
+  "progression": "Am - F - G - Am",
+  "tracks": {
+    "lead": ["A4",2, "rest",1, "E5",1, "A4",2, "C5",3, "rest",1, "E5",1, "rest",1, "A4",2, "rest",1, "C5",1,
+             "F4",2, "rest",1, "C5",1, "F4",2, "A4",3, "rest",1, "C5",1, "rest",1, "F4",2, "rest",1, "A4",1,
+             "G4",2, "rest",1, "D5",1, "G4",2, "B4",3, "rest",1, "D5",1, "rest",1, "G4",2, "rest",1, "B4",1,
+             "A4",2, "rest",1, "E5",1, "A4",2, "C5",3, "rest",1, "A4",1, "rest",1, "E5",2, "A4",2],
+    "harm": ["rest",2, "E4",2, "rest",2, "A4",2, "rest",2, "C5",2, "rest",2, "E4",2,
+             "rest",2, "A4",2, "rest",2, "C5",2, "rest",2, "A4",2, "rest",2, "F4",2,
+             "rest",2, "D4",2, "rest",2, "G4",2, "rest",2, "B4",2, "rest",2, "D4",2,
+             "rest",2, "E4",2, "rest",2, "A4",2, "rest",2, "C5",2, "rest",2, "A4",2],
+    "bass": ["A2",6, "E2",3, "A2",5, "E2",2,
+             "F2",3, "C3",5, "F2",5, "C3",3,
+             "G2",7, "D3",5, "G2",4,
+             "A2",5, "E2",3, "A2",4, "A2",4],
+    "drums": "K.H.S.KH.KH.SHKHKH.KS.HHK.SH.KSHKKKHS.HK.SHHKSHKK.S..K.SKHHHKSKS"
+  },
+  "mix": {
+    "master": 0.58,
+    "lead_vol": 0.34,
+    "lead_duty": 0.125,
+    "harm_vol": 0.22,
+    "harm_duty": 0.5,
+    "bass_vol": 0.6
+  }
+}

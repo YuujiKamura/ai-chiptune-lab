@@ -1,0 +1,33 @@
+{
+  "id": "v7",
+  "name": "v7 · Ethereal Tofu",
+  "author": "Gemini",
+  "notes": "render.pyを拡張し、エンベロープ(ADSR)制御を導入。Leadはアタックを遅くしたパッド音色、Bassはリリースを削り落としたパーカッシブなピチカート音色、Harmは極細Duty比による金属的なベル音色を採用。従来の『ピコピコ』から『幻想的・硬質』な空間演出へと音の質感を劇的に変化させた。",
+  "bpm": 150,
+  "bars": 4,
+  "key": "A minor",
+  "progression": "Am - F - G - Am",
+  "tracks": {
+    "lead": ["A4",2, "rest",1, "E5",1, "A4",2, "C5",3, "rest",1, "E5",1, "rest",1, "A4",2, "rest",1, "C5",1,
+             "F4",2, "rest",1, "C5",1, "F4",2, "A4",3, "rest",1, "C5",1, "rest",1, "F4",2, "rest",1, "A4",1,
+             "G4",2, "rest",1, "D5",1, "G4",2, "B4",3, "rest",1, "D5",1, "rest",1, "G4",2, "rest",1, "B4",1,
+             "A4",2, "rest",1, "E5",1, "A4",2, "C5",3, "rest",1, "A4",1, "rest",1, "E5",2, "A4",2],
+    "harm": ["rest",2, "E4",2, "rest",2, "A4",2, "rest",2, "C5",2, "rest",2, "E4",2,
+             "rest",2, "A4",2, "rest",2, "C5",2, "rest",2, "A4",2, "rest",2, "F4",2,
+             "rest",2, "D4",2, "rest",2, "G4",2, "rest",2, "B4",2, "rest",2, "D4",2,
+             "rest",2, "E4",2, "rest",2, "A4",2, "rest",2, "C5",2, "rest",2, "A4",2],
+    "bass": [
+      "A2",2, "A2",2, "E2",2, "E2",2, "A2",2, "A2",2, "G2",2, "E2",2,
+      "F2",2, "F2",2, "C2",2, "C2",2, "F2",2, "F2",2, "E2",2, "C2",2,
+      "G2",2, "G2",2, "D2",2, "D2",2, "G2",2, "G2",2, "F2",2, "D2",2,
+      "A2",2, "A2",2, "E2",2, "E2",2, "A2",4, "A2",4
+    ],
+    "drums": "K.H.S.K.K.H.S.H.K.H.S.K.K.H.S.H.K.H.S.K.K.H.S.H.K.H.S.K.K.H.S.H."
+  },
+  "mix": {
+    "master": 0.6,
+    "lead_vol": 0.35, "lead_duty": 0.5, "lead_attack": 0.6, "lead_release": 0.4,
+    "harm_vol": 0.20, "harm_duty": 0.0625, "harm_attack": 0.01, "harm_release": 0.1,
+    "bass_vol": 0.65, "bass_attack": 0.001, "bass_release": 0.01
+  }
+}
